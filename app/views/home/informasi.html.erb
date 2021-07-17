@@ -1,0 +1,10 @@
+<h1><%= @judul %></h1>
+<hr/>
+<p><%= @isi %></p>
+<p>Framework MVC populer antara lain:
+<ul>
+<% @framework.each do |mv| %>
+  <li><a href="<%= mv[:url] %>"><%= mv[:text] %></a></li>
+<% end %>    
+</ul>
+</p>
